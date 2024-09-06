@@ -4,6 +4,7 @@ const startButton = document.querySelector('#start');
 // TODO: Add the missing query selectors:
 const score = document.querySelectorAll('#score'); // Use querySelector() to get the score element
 const timerDisplay = document.querySelectorAll('#timer'); // use querySelector() to get the timer element.
+*/
 
 let time = 0;
 let timer;
@@ -23,7 +24,7 @@ let difficulty = "hard";
 function randomInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
+*/
 /**
  * Sets the time delay given a difficulty parameter.
  *
@@ -105,7 +106,13 @@ function chooseHole(holes) {
 */
 function gameOver() {
   // TODO: Write your code here
-  
+  if (time > 0) {
+    timeoutID = showUp();
+    return timeoutID;
+  } else {
+    gameStopped = stopGame();
+    return gameStopped;
+  }
 }
 
 /**
@@ -270,8 +277,21 @@ function stopGame(){
 *
 */
 function startGame(){
-  //setDuration(10);
-  //showUp();
+  setDuration(10);
+
+  if (difficulty === 'easy') {
+    setDuration(15); 
+  } else if (difficulty === 'normal') {
+    setDuration(10); 
+  } else if (difficulty === 'hard') {
+    setDuration(5); 
+  }
+  
+  // showUp(); 
+  setEventListeners();
+  clearScore();
+  startTimer();
+
   return "game started";
 }
 

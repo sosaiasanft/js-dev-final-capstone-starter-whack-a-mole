@@ -2,7 +2,7 @@ html {
   /*background: url('./assets/background.png') no-repeat center center fixed;*/
   /* background: url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/background.png?raw=true') no-repeat center center fixed; */
   /* updated background image */
-  background: url('.assts/background.png'); 
+  background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rawpixel.com%2Fsearch%2Fvideo%2520game%2520background&psig=AOvVaw0_GM1piWUfaQsLDzzF_G4J&ust=1725697721949000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOj8wbDzrYgDFQAAAAAdAAAAABAK') no-repeat center center fixed; 
   box-sizing: border-box;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -56,7 +56,7 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
   transform: translate(-50%, -50%);
   background-size: 100% 100%;
   transition: transform 0.1s;
-  pointer-events: none; /* Set pointer-events to none to allow interactions with elements underneath */
+  pointer-events: none; /* Set pointer-events to none to allow interactions with elements underneath*/ 
 }
 
 
@@ -136,6 +136,7 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
 body {
   background-size: cover; /* or contain, based on your preference */
   font-size: 16px; /* Adjust as needed */
+  cursor: url("https://github.com/sosaiasanft/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/mallet.png?raw=true"), auto;
 }
 
 .game-container {

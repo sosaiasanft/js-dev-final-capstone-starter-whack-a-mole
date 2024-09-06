@@ -1,50 +1,70 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles.css">
   </head>
   <body>
-    <h1 id="title">pet-a-rock</h1>
+    <h1 id="title"> Whack-A-Spacemole</h1>
     <div>
-      <div>
-        <h2>Ready, Set, <button id="start">Pet!</button></h2>
+      <!-- Start Buttons and song-->
+      <div style="text-align: center;">
+        <h2>Click <button id="start" type="button" onclick="startGame()">start</button> to play!</h2>
+        <button id ="startButton" type="button" class="startButton" onclick="startGame('easy')"> Easy</button> 
+        <button id ="normalButton" type="button" class="startButton" onclick="startGame('normal')">Normal</button>
+        <button id="hardButton" type="button" class="startButton" onclick="startGame('hard')">Hard</button>
+        
+      
+
+      <!-- Mallet img on cursor -->
+      <div class="cursor">
+        <img src="assets/mallet.png">
       </div>
+      <!-- Score and time code-->
       <div>
         <h2>score: <span id="score">0</span></h2>
       </div>
       <div>
-          <h2><span id="timer">0</span> seconds left.</h2>
+          <h2><span id="timerDisplay">0</span> seconds left</h2>
       </div>
     </div>
+     <!-- Hole and mole code -->
     <div class="grid">
       <div id="hole0" class="hole">
-        <div id="rock0" class="rock"></div>
+        <div id="mole0" class="mole"></div>
       </div>
       <div id="hole1" class="hole">
-        <div id="rock1" class="rock"></div>
+        <div id="mole1" class="mole"></div>
       </div>
-      <!--DONE: added an aditional 7 holes and rocks -->
+      <!--TODO: Add the missing holes and moles. -->
       <div id="hole2" class="hole">
-        <div id="rock2" class="rock"></div>
+        <div id="mole2" class="mole"></div>
       </div>
       <div id="hole3" class="hole">
-        <div id="rock3" class="rock"></div>
+        <div id="mole3" class="mole"></div>
       </div>
       <div id="hole4" class="hole">
-        <div id="rock4" class="rock"></div>
+        <div id="mole4" class="mole"></div>
       </div>
       <div id="hole5" class="hole">
-        <div id="rock5" class="rock"></div>
+        <div id="mole5" class="mole"></div>
       </div>
       <div id="hole6" class="hole">
-        <div id="rock6" class="rock"></div>
+        <div id="mole6" class="mole"></div>
       </div>
       <div id="hole7" class="hole">
-        <div id="rock7" class="rock"></div>
+        <div id="mole7" class="mole"></div>
       </div>
       <div id="hole8" class="hole">
-        <div id="rock8" class="rock"></div>
+        <div id="mole8" class="mole"></div>
       </div>
+
+      <div class="mole">click here to trigger the click event on mole 1</div>
+     <div class="mole">click here to trigger the click event on mole 2</div>
+
     </div>
+
     <script src="./src/index.js"></script>
   </body>
 </html>
